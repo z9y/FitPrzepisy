@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>937947368015-hg7duuro9o1sjqt9s68k3abkfvqbi4qv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.937947368015-hg7duuro9o1sjqt9s68k3abkfvqbi4qv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDuX5k9lv-9_aPrf4yd9civ56K1Q23UMnk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>937947368015</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zari.FitPrzepisy-2</string>
+	<key>PROJECT_ID</key>
+	<string>fitprzepisy-fa567</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fitprzepisy-fa567.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:937947368015:ios:6925626f299cd33948f83a</string>
+	<key>DATABASE_URL</key>
+	<string>https://fitprzepisy-fa567.firebaseio.com</string>
+</dict>
+</plist>

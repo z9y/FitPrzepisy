@@ -17,6 +17,7 @@
 		592E50A7247A7D0D00986954 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592E50A6247A7D0D00986954 /* RegisterViewController.swift */; };
 		592E50A9247A7D9900986954 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592E50A8247A7D9900986954 /* LoginViewController.swift */; };
 		592E50AB247A7FF300986954 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592E50AA247A7FF300986954 /* RecipesViewController.swift */; };
+		59364F67247AF8930054CF5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59364F66247AF8930054CF5F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		592E50A6247A7D0D00986954 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		592E50A8247A7D9900986954 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		592E50AA247A7FF300986954 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		59364F66247AF8930054CF5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				590ECBCA247A7309004889B1 /* AppDelegate.swift */,
+				590ECBCC247A7309004889B1 /* SceneDelegate.swift */,
 				59364F63247AE4480054CF5F /* Model */,
 				59364F65247AE4530054CF5F /* Controller */,
 				59364F64247AE44E0054CF5F /* View */,
-				590ECBCC247A7309004889B1 /* SceneDelegate.swift */,
 				590ECBD3247A7309004889B1 /* Assets.xcassets */,
 				590ECBD5247A7309004889B1 /* LaunchScreen.storyboard */,
 				590ECBD8247A7309004889B1 /* Info.plist */,
+				59364F66247AF8930054CF5F /* GoogleService-Info.plist */,
 			);
 			path = "FitPrzepisy 2";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				590ECBD7247A7309004889B1 /* LaunchScreen.storyboard in Resources */,
+				59364F67247AF8930054CF5F /* GoogleService-Info.plist in Resources */,
 				590ECBD4247A7309004889B1 /* Assets.xcassets in Resources */,
 				590ECBD2247A7309004889B1 /* Main.storyboard in Resources */,
 			);

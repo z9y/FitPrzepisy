@@ -5,6 +5,8 @@ target 'FitPrzepisy 2' do
 
   # Pods for FitPrzepisy 2
   
-  pod 'CLTypingLabel'
+  pod 'CLTypingLabel', '~> 0.4.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end

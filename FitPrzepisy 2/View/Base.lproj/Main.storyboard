@@ -15,20 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFH-ZH-WcN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFH-ZH-WcN">
                                 <rect key="frame" x="20" y="148" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="D75-NJ-dXl"/>
                                 </constraints>
+                                <color key="textColor" red="0.18823529410000001" green="0.89019607840000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-0X-YTe">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-0X-YTe">
                                 <rect key="frame" x="20" y="196" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="K58-Ld-E9g"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="sRf-OD-rsG"/>
                                 </constraints>
+                                <color key="textColor" red="0.18823529410000001" green="0.89019607840000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
@@ -40,7 +42,17 @@
                                     <color key="titleColor" red="0.066666666666666666" green="0.59999999999999998" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GBe-Dx-i0k"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEg-tD-ywD">
+                                <rect key="frame" x="20" y="306" width="374" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89411764709999997" green="0.97647058819999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -55,12 +67,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="KNX-iu-6s4"/>
                     <connections>
+                        <outlet property="emailTextField" destination="GFH-ZH-WcN" id="cS6-gY-w1K"/>
+                        <outlet property="errorLabel" destination="WEg-tD-ywD" id="bsS-zC-yyV"/>
+                        <outlet property="passwordTextField" destination="zJa-0X-YTe" id="tvb-WQ-S9s"/>
                         <segue destination="GBQ-Bz-3yB" kind="show" identifier="RegisterToRecipes" id="0lv-zT-0f2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2431.8840579710145" y="-356.25"/>
+            <point key="canvasLocation" x="2430.434782608696" y="-356.25"/>
         </scene>
         <!--Recipes View Controller-->
         <scene sceneID="CdH-Sf-oRA">
@@ -157,20 +172,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-bf-Mxv">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123@wp.pl" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-bf-Mxv">
                                 <rect key="frame" x="20" y="148" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GFI-dl-Ibh"/>
                                 </constraints>
+                                <color key="textColor" red="0.18823529410000001" green="0.89019607840000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sf9-4V-zdV">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sf9-4V-zdV">
                                 <rect key="frame" x="20" y="196" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="B0h-Qm-8L3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="G0w-CL-ECb"/>
                                 </constraints>
+                                <color key="textColor" red="0.18823529410000001" green="0.89019607840000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
@@ -182,7 +199,24 @@
                                     <color key="titleColor" red="0.066666666669999999" green="0.59999999999999998" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="aOS-wg-U7W" eventType="touchUpInside" id="qxM-R0-9fa"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9i-1J-q24">
+                                <rect key="frame" x="14" y="361" width="374" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-rM-PN5">
+                                <rect key="frame" x="20" y="306" width="374" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.89411764709999997" green="0.97647058819999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -197,6 +231,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="22m-Ey-QrI"/>
                     <connections>
+                        <outlet property="emailTextField" destination="Mmz-bf-Mxv" id="o0o-j1-ngm"/>
+                        <outlet property="errorLabel" destination="Gen-rM-PN5" id="xnd-nk-AmU"/>
+                        <outlet property="passwordTextField" destination="Sf9-4V-zdV" id="sQb-Ua-L8a"/>
                         <segue destination="GBQ-Bz-3yB" kind="show" identifier="LoginToRecipes" id="2Ns-gk-8Yt"/>
                     </connections>
                 </viewController>
@@ -212,8 +249,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitPrzepisy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEF-zp-UZo">
-                                <rect key="frame" x="89.5" y="418" width="235.5" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitPrzepisy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEF-zp-UZo" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="50"/>
                                 <color key="textColor" red="0.066666666669999999" green="0.59999999999999998" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
