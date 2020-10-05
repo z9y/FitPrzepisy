@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
                 if let e = error {
                     self.errorLabel.text = e.localizedDescription
                 } else {
-                    self.performSegue(withIdentifier: "LoginToRecipes", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }

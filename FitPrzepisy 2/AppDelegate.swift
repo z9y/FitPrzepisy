@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FirebaseApp.configure()
         
+        let db = Firestore.firestore();
+        
+//        let title = "Kurczak pieczony"
+//        let glutenFree = true
+//        let lactoseFree = false
+//        let wege = false
+//        let favorite = true
+//        let ingredients = [500: "kurczaka", 200: "makaron", 300: "śmietany"]
+//        let preparing = "Kurczaka ugotować, dodać makaron i wymieszać, dodać śmietane"
+        
         return true
     }
 

@@ -14,9 +14,13 @@
 		590ECBD2247A7309004889B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590ECBD0247A7309004889B1 /* Main.storyboard */; };
 		590ECBD4247A7309004889B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590ECBD3247A7309004889B1 /* Assets.xcassets */; };
 		590ECBD7247A7309004889B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590ECBD5247A7309004889B1 /* LaunchScreen.storyboard */; };
+		591581A3247B81AB00D97819 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591581A2247B81AB00D97819 /* Constants.swift */; };
+		591581A5247B858B00D97819 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591581A4247B858B00D97819 /* Recipe.swift */; };
 		592E50A7247A7D0D00986954 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592E50A6247A7D0D00986954 /* RegisterViewController.swift */; };
 		592E50A9247A7D9900986954 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592E50A8247A7D9900986954 /* LoginViewController.swift */; };
 		592E50AB247A7FF300986954 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592E50AA247A7FF300986954 /* RecipesViewController.swift */; };
+		592FB309247CD7DD00B7E191 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FB307247CD7DD00B7E191 /* RecipeCell.swift */; };
+		592FB30A247CD7DD00B7E191 /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592FB308247CD7DD00B7E191 /* RecipeCell.xib */; };
 		59364F67247AF8930054CF5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59364F66247AF8930054CF5F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +36,13 @@
 		590ECBD3247A7309004889B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		590ECBD6247A7309004889B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		590ECBD8247A7309004889B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591581A2247B81AB00D97819 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		591581A4247B858B00D97819 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		592E50A6247A7D0D00986954 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		592E50A8247A7D9900986954 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		592E50AA247A7FF300986954 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		592FB307247CD7DD00B7E191 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		592FB308247CD7DD00B7E191 /* RecipeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
 		59364F66247AF8930054CF5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,7 @@
 				590ECBD5247A7309004889B1 /* LaunchScreen.storyboard */,
 				590ECBD8247A7309004889B1 /* Info.plist */,
 				59364F66247AF8930054CF5F /* GoogleService-Info.plist */,
+				591581A2247B81AB00D97819 /* Constants.swift */,
 			);
 			path = "FitPrzepisy 2";
 			sourceTree = "<group>";
@@ -87,6 +96,7 @@
 		59364F63247AE4480054CF5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				591581A4247B858B00D97819 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				590ECBD0247A7309004889B1 /* Main.storyboard */,
+				592FB307247CD7DD00B7E191 /* RecipeCell.swift */,
+				592FB308247CD7DD00B7E191 /* RecipeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +201,7 @@
 			files = (
 				590ECBD7247A7309004889B1 /* LaunchScreen.storyboard in Resources */,
 				59364F67247AF8930054CF5F /* GoogleService-Info.plist in Resources */,
+				592FB30A247CD7DD00B7E191 /* RecipeCell.xib in Resources */,
 				590ECBD4247A7309004889B1 /* Assets.xcassets in Resources */,
 				590ECBD2247A7309004889B1 /* Main.storyboard in Resources */,
 			);
@@ -246,9 +259,12 @@
 				590ECBCF247A7309004889B1 /* WelcomeViewController.swift in Sources */,
 				590ECBCB247A7309004889B1 /* AppDelegate.swift in Sources */,
 				590ECBCD247A7309004889B1 /* SceneDelegate.swift in Sources */,
+				592FB309247CD7DD00B7E191 /* RecipeCell.swift in Sources */,
 				592E50A9247A7D9900986954 /* LoginViewController.swift in Sources */,
+				591581A3247B81AB00D97819 /* Constants.swift in Sources */,
 				592E50AB247A7FF300986954 /* RecipesViewController.swift in Sources */,
 				592E50A7247A7D0D00986954 /* RegisterViewController.swift in Sources */,
+				591581A5247B858B00D97819 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

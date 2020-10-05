@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="86" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-i7-Jjw" customClass="RecipeCell" customModule="FitPrzepisy_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="86"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gWB-Vo-k3b">
+                        <rect key="frame" x="3" y="2.5" width="350" height="81"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sphagetti" translatesAutoresizingMaskIntoConstraints="NO" id="uNr-HQ-PcR">
+                                <rect key="frame" x="0.0" y="10.5" width="70" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="bQ8-BI-dXi"/>
+                                    <constraint firstAttribute="height" constant="60" id="bWC-vY-XMg"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUm-Zp-tMe">
+                                <rect key="frame" x="75" y="0.0" width="275" height="81"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w08-dG-23i">
+                                        <rect key="frame" x="5" y="5" width="265" height="71"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.59999999999999998" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w08-dG-23i" secondAttribute="trailing" constant="5" id="4wl-Fr-K7W"/>
+                                    <constraint firstItem="w08-dG-23i" firstAttribute="leading" secondItem="TUm-Zp-tMe" secondAttribute="leading" constant="5" id="ev8-nJ-law"/>
+                                    <constraint firstAttribute="bottom" secondItem="w08-dG-23i" secondAttribute="bottom" constant="5" id="k3y-iy-Dn7"/>
+                                    <constraint firstItem="w08-dG-23i" firstAttribute="top" secondItem="TUm-Zp-tMe" secondAttribute="top" constant="5" id="zT4-UE-diu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Pb7-D0-v0D">
+                        <rect key="frame" x="358" y="25.5" width="35" height="35"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vege" translatesAutoresizingMaskIntoConstraints="NO" id="MvM-gN-b5t">
+                                <rect key="frame" x="-35" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IE8-dg-qQy"/>
+                                    <constraint firstAttribute="width" constant="35" id="TfD-XU-Mu2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lactose" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-Ky-fen">
+                                <rect key="frame" x="-35" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="NpN-eT-OI6"/>
+                                    <constraint firstAttribute="height" constant="35" id="dTC-Un-HV7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gluten" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-mp-rqc">
+                                <rect key="frame" x="-35" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="QVW-lE-pgQ"/>
+                                    <constraint firstAttribute="height" constant="35" id="cVy-4K-D8p"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-Fh-9bH">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4B3-GW-cm4"/>
+                                    <constraint firstAttribute="width" constant="35" id="UNx-lO-J6y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.066666666669999999" green="0.59999999999999998" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="star">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2JL-r5-8k2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Pb7-D0-v0D" secondAttribute="trailing" constant="3" id="6nw-KJ-oEM"/>
+                    <constraint firstItem="gWB-Vo-k3b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gpv-J9-G0m"/>
+                    <constraint firstItem="Pb7-D0-v0D" firstAttribute="leading" secondItem="gWB-Vo-k3b" secondAttribute="trailing" constant="5" id="Hdo-tb-Kbh"/>
+                    <constraint firstItem="gWB-Vo-k3b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="KtE-2f-Cpg"/>
+                    <constraint firstItem="Pb7-D0-v0D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mHE-of-WX4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="glutenImage" destination="FuB-mp-rqc" id="FFi-bL-szV"/>
+                <outlet property="imageView" destination="uNr-HQ-PcR" id="fEy-cd-d8d"/>
+                <outlet property="lactoseImage" destination="bX3-Ky-fen" id="T4b-KH-bRz"/>
+                <outlet property="recipeCellImage" destination="uNr-HQ-PcR" id="Ipy-6J-Hv3"/>
+                <outlet property="titleLabel" destination="w08-dG-23i" id="SO0-Gu-qjE"/>
+                <outlet property="vegeImage" destination="MvM-gN-b5t" id="YpO-Mj-bbt"/>
+            </connections>
+            <point key="canvasLocation" x="-1392.753623188406" y="-227.00892857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gluten" width="200" height="200"/>
+        <image name="lactose" width="230" height="219"/>
+        <image name="sphagetti" width="3937" height="2672"/>
+        <image name="star" width="15" height="14"/>
+        <image name="vege" width="293" height="293"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
